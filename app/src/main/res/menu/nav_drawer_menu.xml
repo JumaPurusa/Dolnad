@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/topNavigation"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/action_coupons"
+            android:title="@string/coupons"
+            android:checked="true"
+            android:icon="@drawable/ic_receipt"/>
+
+        <item android:id="@+id/action_clients"
+            android:title="@string/clients"
+            android:icon="@drawable/ic_people"/>
+
+    </group>
+
+<!--    <group android:id="@+id/bottomNavigation"-->
+<!--        android:checkableBehavior="single">-->
+
+<!--        <item-->
+<!--            android:id="@+id/nav_about"-->
+<!--            android:icon="@drawable/favicon"-->
+<!--            android:checkable="false"-->
+<!--            android:title="@string/action_about" />-->
+
+<!--    </group>-->
+
+</menu>

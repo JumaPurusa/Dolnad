@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_dope" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#5000"
+            android:clickable="false" />
+
+        <LinearLayout
+            android:id="@+id/layoutSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:alpha="0.7"
+                android:text="LINKER"
+                android:textAllCaps="true"
+                android:textColor="@android:color/white"
+                android:textFontWeight="800"
+                android:textSize="40sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:alpha="0.7"
+                android:text="Smart way to link clients"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="end"-->
+            <!--android:text="&#183; Sign It &#183; Get It &#183;"-->
+            <!--android:textAllCaps="true"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="14sp" />-->
+
+            <EditText
+                android:id="@+id/editTextEmail"
+                android:layout_width="256dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/shape_edit_text"
+                android:focusableInTouchMode="true"
+                android:gravity="center_vertical"
+                android:hint="Email"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress|textAutoComplete"
+                android:maxLines="1"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:textColor="#FFFF"
+                android:textColorHint="#CFFF"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal">
+
+                <EditText
+                    android:id="@+id/editTextPassword"
+                    android:layout_width="256dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/shape_edit_text"
+                    android:focusableInTouchMode="true"
+                    android:gravity="center_vertical"
+                    android:hint="Password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:paddingStart="16dp"
+                    android:paddingEnd="28dp"
+                    android:textColor="#FFFF"
+                    android:textColorHint="#CFFF"
+                    android:textSize="16sp" />
+
+                <!--<ImageButton-->
+                <!--android:id="@+id/iconShowInput"-->
+                <!--android:layout_width="24dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_gravity="center_vertical|end"-->
+                <!--android:layout_marginEnd="8dp"-->
+                <!--android:alpha=".6"-->
+                <!--android:background="#0FFF"-->
+                <!--android:padding="2dp"-->
+                <!--android:src="@drawable/ic_eye_off"-->
+                <!--android:tint="@color/colorPrimaryLight" />-->
+            </FrameLayout>
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="64dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:background="@drawable/shape_button_stroke"
+                android:text="Login"
+                android:textAllCaps="false"
+                android:textColor="@color/selector_color_white_accent"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/mToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="24dp"
+            android:elevation="2dp"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ToolbarStyle.Transparent"
+            app:titleTextAppearance="@style/ToolbarTextAppearance.Transparent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#2000"
+            android:gravity="end|center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingTop="8dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:text="&#169; 2020 &#183; ICAP"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/icap_new_logo" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

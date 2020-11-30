@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Dolnad</string>
+
+    <string name="please_wait">Please Wait...</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="coupons">Coupons</string>
+    <string name="clients">Clients</string>
+    <string name="drawer_open">Open drawer.</string>
+    <string name="drawer_close">Close drawer.</string>
+    <string name="device_offline">Device is offline!</string>
+    <string name="please_enter_all_required_fields">Please enter all required fields</string>
+    <string name="invalid_email">Invalid Email</string>
+    <string name="error_msg_unknown">Unknown Error</string>
+    <string name="error_msg_no_internet">There is no internet</string>
+    <string name="error_msg_timeout">Timeout Error</string>
+    <string name="logout">Logout</string>
+    <string name="exit_app">Do you want to logout?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="fullName">Name</string>
+    <string name="mobile">Mobile</string>
+    <string name="gender">Gender</string>
+    <string name="retry">Retry</string>
+    <string name="cant_show_clients">Can\'t show Clients</string>
+    <string name="cant_show_coupons">Can\'t show coupons</string>
+    <string name="internet_try_again">Please turn on Internet</string>
+    <string name="client_details">Client Details</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="kvp_status">KVP Status</string>
+    <string name="linkage_code">Linkage Code</string>
+    <string name="linked_by">Linked by</string>
+    <string name="register_client">Register Client</string>
+
+
+</resources>

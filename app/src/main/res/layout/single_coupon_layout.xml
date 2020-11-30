@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--    <TextView-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:padding="16dp"-->
+    <!--        android:id="@+id/textInfo"/>-->
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ripple_dark_color"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/textLinkageCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/color_primary_text"
+                android:gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/textLinker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@color/color_primary_text"
+                android:layout_below="@+id/textLinkageCode"/>
+
+<!--            <TextView-->
+<!--                android:id="@+id/textLinked"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/gender"-->
+<!--                android:textSize="14sp"-->
+<!--                android:textColor="@color/color_secondary_text"-->
+<!--                android:layout_below="@id/textLinker"/>-->
+
+            <TextView
+                android:id="@+id/textCreatedAt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="14sp"
+                android:layout_below="@id/textLinker"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+        <View
+            android:id="@+id/isNotLinkedView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_circle_red"
+            android:elevation="5dp"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/isLinkedView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="end|top"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/shape_circle_green"
+            android:elevation="5dp"
+            android:visibility="gone"/>
+
+
+</FrameLayout>

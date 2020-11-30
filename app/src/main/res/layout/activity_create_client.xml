@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/coordinatorLayout"
+    tools:context=".Activities.CreateClientActivity">
+
+    <include layout="@layout/app_bar"/>
+
+    <LinearLayout
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/firstName_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="16dp">
+
+            <EditText
+                android:id="@+id/firstNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/first_name"
+                android:textColor="@color/color_primary_text"
+                android:textSize="18sp"
+                android:inputType="text|textAutoComplete"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/lastName_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp">
+
+            <EditText
+                android:id="@+id/lastNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/last_name"
+                android:textColor="@color/color_primary_text"
+                android:textSize="18sp"
+                android:inputType="text|textAutoComplete"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp">
+
+            <EditText
+                android:id="@+id/mobileEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/mobile"
+                android:textColor="@color/color_primary_text"
+                android:textSize="18sp"
+                android:inputType="phone"
+                android:maxLines="1"
+                android:imeOptions="actionNext"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/paymentName_text_input_layout"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp">
+
+            <EditText
+                android:id="@+id/kvpStatusEditText"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="@string/kvp_status"
+                android:textColor="@color/color_primary_text"
+                android:textSize="18sp"
+                android:inputType="text|textAutoComplete"
+                android:maxLines="1"
+                android:imeOptions="actionDone"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textLinkageCode"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"/>
+
+        <TextView
+            android:id="@+id/textLinkedBy"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text=""
+            android:textSize="16sp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="8dp"/>
+
+
+        <!--        <com.google.android.material.textfield.TextInputLayout-->
+        <!--            android:id="@+id/occupation_text_input_layout"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="56dp"-->
+        <!--            android:layout_gravity="center_horizontal"-->
+        <!--            android:layout_marginBottom="16dp"-->
+        <!--            android:layout_marginStart="48dp"-->
+        <!--            android:layout_marginEnd="48dp">-->
+        <!---->
+        <!--            <EditText-->
+        <!--                android:id="@+id/occupationEditText"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="50dp"-->
+        <!--                android:hint="@string/occupation"-->
+        <!--                android:textColor="@color/color_primary_text"-->
+        <!--                android:textSize="18sp"-->
+        <!--                android:inputType="text|textAutoComplete"-->
+        <!--                android:maxLines="1"-->
+        <!--                android:imeOptions="actionNext"-->
+        <!--                android:layout_centerHorizontal="true"-->
+        <!--                android:layout_centerVertical="true"/>-->
+        <!--        </com.google.android.material.textfield.TextInputLayout>-->
+        <!---->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/genderTextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/gender"
+                android:layout_centerVertical="true"/>
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toEndOf="@id/genderTextLabel"
+                android:layout_marginStart="32dp">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/male"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/female" />
+            </RadioGroup>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="48dp"
+            android:layout_marginEnd="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/button_background"
+            android:text="@string/register_client"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
